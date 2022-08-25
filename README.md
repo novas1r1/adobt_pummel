@@ -13,3 +13,4 @@ An example application built with dart_frog
 # Commands
 `dart pub global activate dart_frog_cli`
 `export PATH="$PATH":"$HOME/.pub-cache/bin"`
+`dart run build_runner build`

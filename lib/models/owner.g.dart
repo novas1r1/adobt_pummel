@@ -7,7 +7,7 @@ part of 'owner.dart';
 // **************************************************************************
 
 Owner _$OwnerFromJson(Map<String, dynamic> json) => Owner(
-      id: json['id'] as String,
+      id: json['id'] as String?,
       name: json['name'] as String,
     );
 

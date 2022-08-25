@@ -7,7 +7,7 @@ part of 'pet.dart';
 // **************************************************************************
 
 Pet _$PetFromJson(Map<String, dynamic> json) => Pet(
-      id: json['id'] as String,
+      id: json['id'] as String?,
       name: json['name'] as String,
       species: $enumDecode(_$SpeciesEnumMap, json['species']),
       weight: (json['weight'] as num).toDouble(),

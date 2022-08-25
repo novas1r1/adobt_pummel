@@ -6,7 +6,7 @@ part 'pet.g.dart';
 @JsonSerializable()
 class Pet {
   const Pet({
-    required this.id,
+    this.id,
     required this.name,
     required this.species,
     required this.weight,
@@ -18,7 +18,7 @@ class Pet {
 
   factory Pet.fromJson(Map<String, dynamic> json) => _$PetFromJson(json);
 
-  final String id;
+  final String? id;
   final String name;
   final Species species;
   final double weight;
