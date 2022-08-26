@@ -44,7 +44,6 @@ Future<Response> _put(RequestContext context, String id, Pet pet) async {
       height: updatedTodo.height,
       age: updatedTodo.age,
       isFemale: updatedTodo.isFemale,
-      owner: updatedTodo.owner,
     ),
   );
 

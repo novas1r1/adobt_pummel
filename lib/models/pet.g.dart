@@ -14,9 +14,6 @@ Pet _$PetFromJson(Map<String, dynamic> json) => Pet(
       height: (json['height'] as num).toDouble(),
       age: json['age'] as int,
       isFemale: json['isFemale'] as bool? ?? true,
-      owner: json['owner'] == null
-          ? null
-          : Owner.fromJson(json['owner'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$PetToJson(Pet instance) => <String, dynamic>{
@@ -27,7 +24,6 @@ Map<String, dynamic> _$PetToJson(Pet instance) => <String, dynamic>{
       'height': instance.height,
       'age': instance.age,
       'isFemale': instance.isFemale,
-      'owner': instance.owner,
     };
 
 const _$SpeciesEnumMap = {

@@ -1,4 +1,3 @@
-import 'package:adopt_pummel/models/owner.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'pet.g.dart';
@@ -13,7 +12,6 @@ class Pet {
     required this.height,
     required this.age,
     this.isFemale = true,
-    this.owner,
   });
 
   factory Pet.fromJson(Map<String, dynamic> json) => _$PetFromJson(json);
@@ -25,7 +23,6 @@ class Pet {
   final double height;
   final int age;
   final bool isFemale;
-  final Owner? owner;
 
   Map<String, dynamic> toJson() => _$PetToJson(this);
 
@@ -37,7 +34,6 @@ class Pet {
     double? height,
     int? age,
     bool? isFemale,
-    Owner? owner,
   }) {
     return Pet(
       id: id ?? this.id,
@@ -47,7 +43,6 @@ class Pet {
       height: height ?? this.height,
       age: age ?? this.age,
       isFemale: isFemale ?? this.isFemale,
-      owner: owner ?? this.owner,
     );
   }
 }
