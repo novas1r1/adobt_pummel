@@ -38,7 +38,7 @@ jobs:
       #   run: docker build --file ./adobt_ -t adobt_pummel .
 
       - name: Build docker image
-        run: docker build -t adopt_pummel:$(date +%s) .
+        run: docker build --file ./adopt_pummel/build/Dockerfile --tag adopt_pummel:$(date +%s)
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
