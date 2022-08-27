@@ -3,8 +3,9 @@ import 'package:adopt_pummel/models/pet.dart';
 import 'package:uuid/uuid.dart';
 
 /// An in-memory implementation of the [PetDataSource] interface.
+/// Will be reset on each deploy.
 class MemoryPetDataSource implements PetDataSource {
-  /// Map of ID -> Todo
+  /// Map of ID -> Pet
   final _cache = <String, Pet>{};
 
   @override

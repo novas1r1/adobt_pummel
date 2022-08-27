@@ -1,3 +1,5 @@
+// ignore_for_file: public_member_api_docs
+
 import 'package:json_annotation/json_annotation.dart';
 
 part 'pet.g.dart';
@@ -16,12 +18,25 @@ class Pet {
 
   factory Pet.fromJson(Map<String, dynamic> json) => _$PetFromJson(json);
 
+  /// uuid, auto generated on create
   final String? id;
+
+  /// name
   final String name;
+
+  /// species, can be dog, cat, fish, bird
   final Species species;
+
+  /// weight in kg
   final double weight;
+
+  /// height in cm
   final double height;
+
+  /// age in years
   final int age;
+
+  /// gender
   final bool isFemale;
 
   Map<String, dynamic> toJson() => _$PetToJson(this);
