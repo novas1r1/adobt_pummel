@@ -17,7 +17,7 @@ An example application built with dart_frog
 
 - in build/
   - docker build -t adobt_pummel .
-  - docker run -p 80:80 -t adobt_pummel
+  - docker run -p 80:8080 -t adobt_pummel
 
 registry.digitalocean.com/novas1r1
 docker build build \
