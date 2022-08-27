@@ -40,7 +40,7 @@ jobs:
       - name: DigitalOcean App Platform deployment
         uses: digitalocean/app_action@main
         with:
-          app_name: adopt_pummel
+          app_name: oyster-app
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
