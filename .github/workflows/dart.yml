@@ -34,8 +34,11 @@ jobs:
       - name: Change to /build
         run: cd build
 
+      # - name: Build docker image
+      #   run: docker build --file ./adobt_ -t adobt_pummel .
+
       - name: Build docker image
-        run: docker build -t adobt_pummel .
+        run: docker build -t adopt_pummel .
 
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
