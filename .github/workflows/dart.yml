@@ -37,6 +37,11 @@ jobs:
       - name: Build docker image
         run: docker build -t adopt_pummel:$(date +%s) ./build
 
+      - name: DigitalOcean App Platform deployment
+        uses: digitalocean/app_action@main
+        with:
+          app_name: adopt_pummel
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       # Uncomment this step to verify the use of 'dart format' on each commit.
       # - name: Verify formatting
       #   run: dart format --output=none --set-exit-if-changed .
